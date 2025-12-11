@@ -1,5 +1,4 @@
 from aiogram.types import Message
-from aiogram.filters import Command
 from aiogram import Router, F
 from aiogram.fsm.context import FSMContext
 from states import AppState
@@ -14,6 +13,9 @@ async def create_handler(message: Message, state: FSMContext):
     user_id = message.from_user.id
     cursor.execute("SELECT id, todo, status FROM todos WHERE user_id=?", (user_id,))
     rows = cursor.fetchall()
+    if len(rows)==0:
+        await message.answer('Sizda todo mavjud emas!')
+        return 
     for i, todo in enumerate(rows):
         if todo[2]==True:
             status = "Bajarilgan"

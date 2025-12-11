@@ -1,11 +1,14 @@
 from aiogram import Bot, Dispatcher
 import asyncio
 from handlers import start, create, get, delete, update
-from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
-from aiohttp import web
+import dotenv, os
 
 
-bot=Bot('8550645746:AAE4Xeftx2NIOmQJqkebNYtLTMhmEGyjfMI')
+dotenv.load_dotenv()
+Token = os.getenv('Token')
+
+
+bot=Bot(Token)
 dp=Dispatcher()
 
 

@@ -1,12 +1,9 @@
-from aiogram.types import Message
-from aiogram.filters import Command
-from aiogram import Router, F
+from aiogram import Router
 from aiogram.fsm.context import FSMContext
 from states import AppState
 from db.config import cursor, conn
-from keyboards import inline_menu
 from aiogram.types import CallbackQuery
-from states import AppState
+
 
 router = Router()
 
