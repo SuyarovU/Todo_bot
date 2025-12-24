@@ -1,0 +1,5 @@
+Bot To do(Vazifa) lar bilan ishlash uchun yaratilgan, unda vazifalarni yaratish, saqlash, ko'rish, statusini o'zgartirish va o'chirish mumkin.
+Bu bot Aiogram kutubxonasi yordamida yaratildi, hozirda botdan foydalanish mumkin u serverga deploy qilingan. Ma'lumotlarni saqlashda sqlite dan 
+faoydalandim, loyihada darsda o'rganilgan va mustaqil ta'lim jarayonida o'rganilgan bilimlardan foydalandim. 
+Bot manzili:  @todoforpython_bot
+Git hub: https://github.com/SuyarovU/Loyiha_bot
